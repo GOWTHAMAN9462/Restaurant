@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    
+    
+    
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="logo" class="logo" ></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="categories.html">Categories</a>
+                      </li>
+                      <li class="nav-item align-items-center">
+                        <a class="nav-link active" href="#">Contacts Us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">About Us</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+            </nav>
+
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="title">Top products</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"  id="col-212">
+                    <div class="components">
+                        <img src="img/menu/C/C1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title12" class="com-title">
+                            <p>CHINESE SCALLION PANCAKE WRAP</p>
+                        </div>
+                        <div id ="com-description12" class="com-description">
+                            <p>with choice of string bean, string bean chicken, string bean beef, beef onions, moo shu vegetable</p>
+                        </div>
+                        <form id="com-form12">
+                            <input type="button" onclick="edit1(12)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(12)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-222">
+                    <div class="components">
+                        <img src="img/menu/C/C1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title22" class="com-title">
+                            <p>Teriyaki Chicken</p>
+                        </div>
+                        <div id ="com-description22" class="com-description">
+                            <p>marinated grilled chicken breast with vegetables and lo mein on the side</p>
+                        </div>
+                        <form id="com-form22">
+                            <input type="button" onclick="edit1(22)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(22)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-232">
+                    <div class="components">
+                        <img src="img/menu/C/C1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title32" class="com-title">
+                            <p>Vegetable Tempura</p>
+                        </div>
+                        <div id ="com-description32" class="com-description">
+                            <p>assorted vegetables breaded and fried, served with lo mein on the side</p>
+                        </div>
+                        <form id="com-form32">
+                            <input type="button" onclick="edit1(32)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(32)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-242">
+                    <div class="components">
+                        <img src="img/menu/C/C1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title42" class="com-title">
+                            <p>Orange Chicken and Beef Combo</p>
+                        </div>
+                        <div id ="com-description42" class="com-description">
+                            <p>white meat chicken and beef, breaded and deep-fried with special house sauce; served with lo mein and vegetables</p>
+                        </div>
+                        <form id="com-form42">
+                            <input type="button" onclick="edit1(42)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(42)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>           
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="title">Soup</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"  id="col-213">
+                    <div class="components">
+                        <img src="img/menu/A/A1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title13" class="com-title">
+                            <p>Won Ton Soup with Chicken</p>
+                        </div>
+                        <div id ="com-description13" class="com-description">
+                            <p>chicken-stuffed won tons in clear chicken broth with white meat chicken pieces and a few scallions</p>
+                        </div>
+                        <form id="com-form13">
+                            <input type="button" onclick="edit1(13)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(13)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-223">
+                    <div class="components">
+                        <img src="img/menu/A/A4.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title23" class="com-title">
+                            <p>Hot and Sour Soup</p>
+                        </div>
+                        <div id ="com-description23" class="com-description">
+                            <p>tofu, chicken, mushroom, bamboo shoot, and egg</p>
+                        </div>
+                        <form id="com-form23">
+                            <input type="button" onclick="edit1(23)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(23)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-233">
+                    <div class="components">
+                        <img src="img/menu/A/A6.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title33" class="com-title">
+                            <p>Chicken Noodle Soup</p>
+                        </div>
+                        <div id ="com-description33" class="com-description">
+                            <p>clear broth and lo mein noodles or white rice, chicken pieces</p>
+                        </div>
+                        <form id="com-form33">
+                            <input type="button" onclick="edit1(33)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(33)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-243">
+                    <div class="components">
+                        <img src="img/menu/C/C1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title43" class="com-title">
+                            <p>Chicken with Garden Vegetable Soup</p>
+                        </div>
+                        <div id ="com-description43" class="com-description">
+                            <p>clear chicken broth with mixed vegetables (carrots, cabbage, baby corn, mushroom, snow peas) and chicken pieces</p>
+                        </div>
+                        <form id="com-form43">
+                            <input type="button" onclick="edit1(43)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(43)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>          
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="title"> Appetizers</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"  id="col-214">
+                    <div class="components">
+                        <img src="img/menu/B/B1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title14" class="com-title">
+                            <p>Beef Egg Roll</p>
+                        </div>
+                        <div id ="com-description14" class="com-description">
+                            <p>eggroll with cabbage, carrots and beef</p>
+                        </div>
+                        <form id="com-form14">
+                            <input type="button" onclick="edit1(14)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(14)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-224">
+                    <div class="components">
+                        <img src="img/menu/B/B2.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title24" class="com-title">
+                            <p>Spring Roll</p>
+                        </div>
+                        <div id ="com-description24" class="com-description">
+                            <p>thin wraps with white meat and cabbage</p>
+                        </div>
+                        <form id="com-form24">
+                            <input type="button" onclick="edit1(24)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(24)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-234">
+                    <div class="components">
+                        <img src="img/menu/B/B5.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title34" class="com-title">
+                            <p>Chicken Toast</p>
+                        </div>
+                        <div id ="com-description34" class="com-description">
+                            <p>ground chicken meat on bread, deep-fried, comes with 4 pieces</p>
+                        </div>
+                        <form id="com-form34">
+                            <input type="button" onclick="edit1(34)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(34)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-244">
+                    <div class="components">
+                        <img src="img/menu/B/B7.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title44" class="com-title">
+                            <p>Scallion Pancake</p>
+                        </div>
+                        <div id ="com-description44" class="com-description">
+                            <p>dough mixed with scallion and pan-fried</p>
+                        </div>
+                        <form id="com-form44">
+                            <input type="button" onclick="edit1(44)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(44)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="title">Chicken</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"  id="col-215">
+                    <div class="components">
+                        <img src="img/menu/C/C1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title15" class="com-title">
+                            <p>Orange Chicken</p>
+                        </div>
+                        <div id ="com-description15" class="com-description">
+                            <p>chunks of chicken, breaded and deep-fried with sauce containing orange peels</p>
+                        </div>
+                        <form id="com-form15">
+                            <input type="button" onclick="edit1(15)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(15)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-225">
+                    <div class="components">
+                        <img src="img/menu/C/C2.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title25" class="com-title">
+                            <p>General Tso's Chicken</p>
+                        </div>
+                        <div id ="com-description25" class="com-description">
+                            <p>chunks of chicken, breaded and deep-fried with sauce and scallions</p>
+                        </div>
+                        <form id="com-form25">
+                            <input type="button" onclick="edit1(25)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(25)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-235">
+                    <div class="components">
+                        <img src="img/menu/C/C3.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title35" class="com-title">
+                            <p>White Meat Chicken with String Bean</p>
+                        </div>
+                        <div id ="com-description35" class="com-description">
+                            <p>white meat chicken sauteed with string beans and soy sauce</p>
+                        </div>
+                        <form id="com-form35">
+                            <input type="button" onclick="edit1(35)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(35)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-245">
+                    <div class="components">
+                        <img src="img/menu/C/C4.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title45" class="com-title">
+                            <p>White Meat Chicken with Eggplant In Garlic Sauce</p>
+                        </div>
+                        <div id ="com-description45" class="com-description">
+                            <p>white meat chicken, string beans, waterchestnuts, mushrooms, and eggplant, in garlic sauce</p>
+                        </div>
+                        <form id="com-form45">
+                            <input type="button" onclick="edit1(45)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(45)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <h1 class="title">Vegetables</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3"  id="col-216">
+                    <div class="components">
+                        <img src="img/menu/VG/VG1.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title16" class="com-title">
+                            <p>Wok's Mixed Vegetables</p>
+                        </div>
+                        <div id ="com-description16" class="com-description">
+                            <p>broccoli, carrots, baby corn, water chestnuts, mushrooms, and snow peas sauteed in brown sauce</p>
+                        </div>
+                        <form id="com-form16">
+                            <input type="button" onclick="edit1(16)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(16)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-226">
+                    <div class="components">
+                        <img src="img/menu/VG/VG2.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title26" class="com-title">
+                            <p>Sauteed String Beans, Szechuan</p>
+                        </div>
+                        <div id ="com-description26" class="com-description">
+                            <p>onions and string beans sauteed with chef's sauce</p>
+                        </div>
+                        <form id="com-form26">
+                            <input type="button" onclick="edit1(26)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(26)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-236">
+                    <div class="components">
+                        <img src="img/menu/VG/VG4.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title36" class="com-title">
+                            <p>Crispy Eggplant in Garlic Sauce</p>
+                        </div>
+                        <div id ="com-description36" class="com-description">
+                            <p>breaded and fried eggplants sauteed in sweet garlic sauce and sesame seeds</p>
+                        </div>
+                        <form id="com-form36">
+                            <input type="button" onclick="edit1(36)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(36)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+                <div class="col-3"  id="col-246">
+                    <div class="components">
+                        <img src="img/menu/VG/VG3.jpg" alt="categorious" class="com-img">
+                        <div id ="com-title46" class="com-title">
+                            <p>Eggplant in Garlic Sauce</p>
+                        </div>
+                        <div id ="com-description46" class="com-description">
+                            <p>eggplant sauteed with water chestnuts and string beans in garlic sauce</p>
+                        </div>
+                        <form id="com-form46">
+                            <input type="button" onclick="edit1(46)" value="EDIT" name="edit" id="edit">
+                            <input type="button" onclick="delete1(46)" value="DELETE" name="delete" id="delete">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.jpg" alt="logo" class="logo" ></a>
+                    <p class="text-center">&copy All rights reserved</p>
+                </nav>
+            </div>
+        </div>
+    
+        <script src="js\bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

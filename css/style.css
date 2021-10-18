@@ -1,0 +1,111 @@
+.logo{
+    width : 90px;
+    border-radius: 10px;
+
+}
+
+.nav-link{
+    text-transform: uppercase;
+}
+.title{
+    text-align: center;
+    padding: 1% 0%;
+    text-transform: uppercase;
+}
+
+.components{
+    position: relative;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+.com-img{
+    width: 100%;
+    height: 250px;
+}
+
+#com-title{
+    width: 100%;
+    background: grey;
+    opacity: 50%;
+    color: white;
+    align-items: center;
+}
+
+#com-title>p{
+    text-align: center;
+    margin: 8px 10px 10px 10px;
+    text-transform: uppercase;
+}
+#edit, #delete{
+    width: 40%;
+    margin: 2% 3%;
+}
+
+#done{
+    width: 45%;
+    margin: 1% 25%;
+}
+
+#more{
+    text-align: center;
+    color: white;
+    background-color: black;
+    opacity: 70%;
+    position: absolute;
+    float: left;
+    top: 0%;
+    left:0%;
+    width: 100%;
+    height: 100%;
+    align-content:center;
+    padding: 50% 0%;
+    font-size: 30px;
+    margin: 0px;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+
+a:hover{
+    color: white;
+    zoom: 105%;
+}
+
+#more:hover{
+    opacity: 60%;
+}
+
+
+.com-title > p{
+    text-align: center;
+    text-transform: uppercase;
+    height: 40px;
+    padding: 2px;
+    font-weight: bolder;
+}
+
+.com-description > p{
+    text-align: center;
+    text-transform: uppercase;
+    height: 110px;
+    padding: 2px;
+}
+
+.col-2 img:hover , .col-3 img:hover{
+    zoom: 100.5%;
+}
+
+.col-2 , .col-3{
+    height: 20%;
+    margin: 0% 0% 2% 0%;
+}
+
+.row{
+    padding: 0% 0% 10px 0%;
+}
+
+.text-center{
+    width: 100%
+}
